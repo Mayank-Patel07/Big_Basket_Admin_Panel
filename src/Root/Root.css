@@ -1,0 +1,35 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+
+}
+
+.Home::before {
+    content: "";
+    position: absolute;
+    background: url(../assets/lily-banse--YHSwy6uqvk-unsplash.jpg) no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.85;
+    top: 0px;
+    left: 0px;
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.HomePara {
+    color: white;
+    margin: 0px 15px;
+}

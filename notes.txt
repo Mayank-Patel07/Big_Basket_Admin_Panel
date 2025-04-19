@@ -1,0 +1,78 @@
+Big Basket Application (MERN Stack Application)
+----------------------
+client : React + Bootstrap
+Server : Express + MongoDB + Node
+
+Client Configuration
+---------------------
+src -> app
+        -> root
+		    -> components
+			    -> navbar
+			    -> home
+	-> products
+                    -> components
+				-> product-list
+				-> product-admin
+				-> create-product
+				-> update-product
+
+Server Configuration
+--------------------
+modules : express , cors , mongoose , dotenv , express-validator
+
+npm install express cors mongoose dotenv express-validator
+
+Router : productRouter
+
+REST API
+--------
+1) @usage : Get all Products
+   @url : http://127.0.0.1:5000/api/products/
+   @fields : no-fields
+   @method : GET
+   @access : PUBLIC
+
+2) @usage : Get a Product
+   @url : http://127.0.0.1:5000/api/products/:product_id
+   @fields : no-fields
+   @method : GET
+   @access : PUBLIC
+
+3) @usage : Create a Product
+   @url : http://127.0.0.1:5000/api/products/
+   @fields : name , image , price , qty , info
+   @method : POST
+   @access : PUBLIC
+
+4) @usage : Update Product
+   @url : http://127.0.0.1:5000/api/products/:product_id
+   @fields : name , image , price , qty , info
+   @method : PUT
+   @access : PUBLIC
+
+5) @usage : Delete Product
+   @url : http://127.0.0.1:5000/api/products/:product_id
+   @fields : no-fields
+   @method : DELETE
+   @access : PUBLIC
+
+MongoDB Configuration
+---------------------
+database : big-basket-04-rcjs-mrng
+tables : products
+products : name , image , price , qty , info , created
+
+create -> insertOne -> save()
+read -> find()      -> find() , findOne() , findById()
+update -> updateOne() -> findByIdAndUpdate()
+delete -> deleteOne() -> findByIdAndDelete()
+
+
+
+
+
+
+
+
+
