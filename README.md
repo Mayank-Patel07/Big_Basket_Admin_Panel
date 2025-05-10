@@ -1,20 +1,61 @@
-# React + Vite
+# 🛒 BigBasket Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **BigBasket Admin Panel** is a full-featured, responsive web application built using the **MERN stack** (MongoDB, Express, React, Node.js) and styled with **React Bootstrap** or **Material-UI (MUI)**. It enables administrators to manage products efficiently through a clean and responsive dashboard interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 Project Description
 
-## Expanding the ESLint configuration
+This admin panel allows the BigBasket team to manage all product-related operations:
 
-If you are developing a production application, we recommend using TypeScript and enabling type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **🛒 Product Management:**  
+  - Upload new products with images, pricing, categories, and descriptions  
+  - Edit and update existing product details  
+  - Delete products with confirmation  
+  - Real-time UI updates via Axios and REST APIs
 
-# Server 
-Things I used for the backend.
-Express,
-MongoDB,
-Axios
+- **📱 Responsive Design:**  
+  - Built with **React Bootstrap** or **MUI** for a seamless experience on desktops, tablets, and mobile devices
 
-Follow this website to run server code: https://expressjs.com/ or https://nodejs.org/en
+- **🧩 Modular Architecture:**  
+  - Organized React folders for scalable frontend development  
+  - Server built with Express and Mongoose for robust backend functionality
+
+---
+
+## 🚀 Technologies Used
+
+### 🧩 Stack
+- **MongoDB** – Database
+- **Express.js** – Backend API framework
+- **React.js (with Vite)** – Frontend SPA
+- **Node.js** – Backend runtime
+
+### 📚 Libraries & Tools
+- **Axios** – API requests from frontend
+- **React Hook Form** – Simplified form handling and validation
+- **Mongoose** – MongoDB object modeling
+- **React Bootstrap** or **MUI** – Component libraries for UI
+
+---
+
+## 📁 Project Structure
+
+```bash
+bigbasket-admin/
+├── node_modules/
+├── public/
+├── server/                      # Backend server (Node.js + Express)
+│   ├── models/                  # Mongoose schemas
+│   └── routes/                  # Express route handlers
+├── src/                         # React frontend (Vite)
+│   ├── assets/                  # Static files and images
+│   ├── product/                 # Product-related pages/components
+│   ├── root/                    # Shared layouts/components
+│   ├── services/                # Axios and API interaction
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── index.html
+├── package.json
+└── README.md
